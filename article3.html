@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau record de construction</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .article-container {
+            max-width: 800px; /* Limite la largeur pour une meilleure lecture */
+            margin: 20px auto; /* Centre l'article sur la page */
+            padding: 20px; /* Espace intérieur */
+            background-color: #fff; /* Fond blanc */
+            border-radius: 10px; /* Coins arrondis */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 2.5em; /* Taille du titre principal */
+            margin-bottom: 10px; /* Espace en bas du titre */
+            color: #333; /* Couleur du texte */
+        }
+
+        .author-info {
+            display: flex; /* Utilise flexbox pour l'alignement */
+            align-items: center; /* Centre verticalement le contenu */
+            margin-bottom: 20px; /* Espace en bas */
+            color: #555; /* Couleur du texte de l'auteur */
+        }
+
+        .author-info img {
+            border-radius: 50%; /* Donne un aspect circulaire à l'image */
+            margin-right: 10px; /* Espace entre l'image et le texte */
+            width: 40px; /* Largeur de l'image */
+            height: 40px; /* Hauteur de l'image */
+        }
+
+        p {
+            line-height: 1.6; /* Interligne pour une meilleure lisibilité */
+            color: #444; /* Couleur du texte */
+        }
+
+        img.article-image {
+            width: 100%; /* Largeur complète */
+            height: auto; /* Hauteur automatique */
+            object-fit: cover; /* Remplit sans déformer */
+            border-radius: 10px; /* Coins arrondis pour l'image */
+            margin-bottom: 20px; /* Espace en bas de l'image */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content glass-effect">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./Logo_BTE_France.png" alt="Logo BTE France">
+                </div>
+                <h2>BTE France News</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#hero">Accueil</a>
+                <a href="actualités.html">Actualités</a>
+                <a href="#map-container">Carte</a>
+                <a href="#footer">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="article-container">
+        <div class="article-content glass-effect">
+            <h1>Interview de la semaine</h1>
+            <div class="author-info">
+                <img id="skin-image" src="" alt="Skin du joueur" style="display: none;">
+                <p><em>écrit par : MaxLananas</em></p>
+            </div>
+            <img src="./2024-10-15_19.48.12.png" alt="Actualité" class="article-image">
+            <p>Chaque semaine, nous avons le plaisir d'interviewer un builder au hasard de notre communauté BTE France. Ces interviews sont l'occasion de découvrir le parcours, les projets et les passions des membres qui contribuent à l'enrichissement de notre serveur.
+
+                Ces échanges nous permettent de mieux comprendre leur vision et leur expérience au sein de BTE France. Que vous soyez un vétéran ou un nouveau membre, ces interviews sont une belle opportunité de rencontrer les talents qui façonnent notre communauté. Restez à l'affût pour ne pas manquer ces moments de partage !</p>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer glass-effect">
+        <div class="footer-content">
+            <h2 class="footer-title">Connectez-vous avec nous</h2>
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@btefrance" class="social-link" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok" width="30" height="30">
+                </a>
+                <a href="https://x.com/bte_france" class="social-link" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X" width="30" height="30">
+                </a>
+                <a href="https://www.instagram.com/bte_france/" class="social-link" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="30" height="30">
+                </a>
+                <a href="https://discord.com/invite/8PjRsptWA8" class="social-link" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord" width="30" height="30">
+                </a>
+            </div>
+            <p class="footer-text">Pour toute demande, contactez-nous à <a href="mailto:MaxLananas971@gmail.com">Ici</a></p>
+            <p>© 2024 BTE France News. Tous droits réservés.</p>
+            <p>
+                <a href="#hero" class="back-to-top">Retour en haut ↑</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        const username = "MaxLananas"; // Changez ceci avec le nom d'utilisateur réel
+        const skinImage = document.getElementById('skin-image');
+        skinImage.src = `https://minotar.net/avatar/${username}/100`;
+        skinImage.style.display = 'block'; // Affiche l'image
+    </script>
+</body>
+</html>
